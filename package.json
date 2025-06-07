@@ -14,7 +14,7 @@
     "lint:fix": "eslint . --ext .js,.ts,.cjs,.mjs --fix",
     "prepare": "husky install",
     "docker:logs": "docker-compose logs -f app",
-    "docker:start": "docker-compose up -d",
+    "docker:start": "docker-compose up --build -d",
     "docker:stop": "docker-compose stop",
     "docker:rm": "docker-compose rm -sf",
     "docker:clean": "docker-compose down --volumes --rmi all"
